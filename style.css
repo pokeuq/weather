@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Sigmar One', cursive;
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.wrapper{
+    display: grid;
+    gap: 1rem;
+    width: 30%;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+.income{
+    background: #6e40fa;
+    padding: 3rem;
+    border-radius: 5px;
+    
+}
+.title{
+    font-size: 40px;
+    text-align: center;
+    margin: 2rem 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form label{
+    font-size: 25px;
+}
+.input-box input{
+    font-family: 'Sigmar One', cursive;
+    height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 2px solid #ffff;
+  transition: .3s;
+}
+.input-box input.active{
+    border: 2.5px solid #624aff;
+}
+input::placeholder{
+    color: #bfbfbf;font-family: 'Unbounded', cursive;
+}
+.input-box{
+    display: flex;
+    gap: 1rem;
+}
+.input-box button {
+    font-family: 'Sigmar One', cursive;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    background: linear-gradient(135deg, #2507e3 0%, #624aff 100%);
+    border: 3px solid #ffff;
+}
+
+.result{
+    transition: .5s;
+    font-family: 'Unbounded', cursive;
+    display: grid;
+    background-color: #203177;
+    padding: 3rem;
+    border-radius: 5px;
+    font-weight: 400;
+
+}
+.result div{
+    border-bottom: 3px solid #ccc;
+    padding: 1.5rem 0;
+}
+.result div:last-child{
+    border-bottom: 0;
+    padding: 1.5rem 0 0 0;
+}
+.result div:first-child{
+    padding: 0 0 1.5rem 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+}
+.name {
+    font-size: 28px;
+    background: #2a50e8;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.description{
+    display: inline-block;
+    background-color: #c56fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+img{
+    background-color: #d0d0d0;
+    padding: 0.5rem;
+    border-radius: 10px; 
+}
+.temp, .humidity {
+    font-size: 22px;
+}
+
+.error{
+    background-color: #121212;
+    color: red;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 22px;
+}
